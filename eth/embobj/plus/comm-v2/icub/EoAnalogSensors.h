@@ -784,7 +784,7 @@ typedef struct
     float32_t               voltage;  
     float32_t               current;  
     float32_t               charge; 
-    uint32_t                filler32;          // to keep struct with an even number of memory chunks
+    uint32_t                advstatus;          // to keep struct with an even number of memory chunks
 
 } eOas_battery_timedvalue_t;     EO_VERIFYsizeof(eOas_battery_timedvalue_t, 32)
 //char (*luca)[sizeof( eOas_battery_timedvalue_t )] = 1;
