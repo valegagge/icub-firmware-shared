@@ -761,6 +761,12 @@ typedef enum
 } eOas_battery_alarm_status_t;
 enum { eoas_bms_alarm_numberof = 7, eoas_battery_alarm_status_numberof = 27 };
 
+typedef enum
+{
+    getDiagnosticLogEntry = 115 //with this commands the EMS asks the last alarms happens during the last run
+                                // This command is available only on Biamino BMS, the other one ignores it.
+} eOas_bms_advanced_commands;
+enum { eoas_bms_advanced_commands_numberof = 1 };
 
 typedef struct
 {
